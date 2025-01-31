@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap'); */
+
+/* 
+font-family: "Sora", serif;
+font-family: "ADLaM Display", serif;
+*/
+@theme {
+    --font-adlam-display: "ADLaM Display", serif;
+    --font-sora: "Sora", serif;
+    --color-black-11: #111111;
+    --color-yellow-01: #FFDC26;
+    --color-gray-01: #FFF9F4;
+    --color-yellow-02: #F9DF8A;
+    --color-rating: #FFC107;
+    --color-pink-01: #F8CCFB;
+    --color-violet-01: #ACD2FD;
+    
+    
+}
+
+
