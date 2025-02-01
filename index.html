@@ -32,11 +32,36 @@
             --color-violet-01: #ACD2FD
             --color-ligh-gray: #C4C4C4;
             --color-footer-01: #FFED93;
-        }
+            --animate-slidDown: slideDown 1s ease-out forwards;
+            --animate-float: float 2s ease-in-out infinite;
+            @keyframes slideDown {
+                    from {
+                      opacity: 0;
+                      transform: translateY(-50px);
+                    }
+                    to {
+                      opacity: 1;
+                      transform: translateY(0);
+                    }
+                  }
+
+                  @keyframes float {
+                    0%, 100% {
+                      transform: translateY(0);
+                    }
+                    50% {
+                      transform: translateY(-20px);
+                    }
+                  }
+              
+}
+        
+
+      
     </style>
 </head>
 <body class="space-y-16">
-    <!-- ======= Header-Section ======== -->
+    <!--! ======= Header-Section ======== -->
     <header id="pet-header" class="container mx-auto lg:max-w-5xl space-y-16 relative px-4">
       <!--? ===== Nav-bar design start ====== -->
       <nav class="space-y-12 bg-gray-01 border-b border-[#111111] sm:border-none">
@@ -90,7 +115,7 @@
               </div>
       </nav>
       <!--? ====== Banner design start ======= -->
-      <div id="banner" class="">
+      <div id="banner" class="animate-slidDown">
           <div class="banner-container -space-y-20 sm:-space-y-48 md:-space-y-60 lg:-space-y-72">
             <div class="banner-text-content space-y-6 w-full z-50 sm:w-2/3">
               <h1 class=" text-3xl md:text-5xl lg:text-6xl font-adlam-display text-black-11">Pamper Your Pet, Because They Deserve the Bes</h1>
@@ -99,13 +124,14 @@
                 <a class="rounded-lg py-3 px-8 font-sora text-xl bg-yellow-01 text-black-11">Find a pet</a>
               </div>
             </div>
-            <div class="banner-img-content relative -z-50">
+            <div class="banner-img-content relative -z-50 animate-float">
               <img class="w-full" src="assets/cat-big.png" alt="">
               <!-- top-72 sm:top-40 md:top-36  -->
             </div>
           </div>
       </div>
     </header>
+    <!--! ====== Main-Section ========= -->
     <main class="container mx-auto lg:max-w-5xl space-y-24 relative px-4">
       <!--? ======= Catagory design start ======== -->
       <section id="Catagory" class="relative">
@@ -382,7 +408,7 @@
                 <p class="font-sora text-gray-500">We offer a variety of pets, including dogs, cats, birds, fish, reptiles, and small animals like rabbits and hamsters.</p>
             </div> 
             <div class="faq-box-container flex flex-col md:flex-row-reverse gap-2 space-y-5 items-center">
-                <div class="faq-img-content w-full md:1/2 lg:w-2/5">
+                <div class="faq-img-content w-full md:1/2 lg:w-2/5 animate-float">
                   <img class="mx-auto w-full" src="assets/faq1.svg" alt="">
                 </div>
                 <div class="faq-accordian-content w-full md:1/2 lg:w-3/5">
@@ -448,6 +474,7 @@
         </div>
       </section>
     </main>
+    <!--! ====== Footer-Section ========= -->
     <footer id="pet-footer" class="bg-footer-01 flex justify-center items-center">
         <div class="footer-container container mx-auto lg:max-w-5xl px-3">
           <div class="footer-content-box md:space-y-5 grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-20 mt-16 pt-96 md:pt-80 pb-10 md:justify-items-end">
@@ -468,7 +495,7 @@
               <div class="footer-menu">
                 <ul class="capitalize font-sora text-xl text-black-11 space-y-5">
                   <li><a href="">find a pet</a></li>
-                  <li><a href="">breeda</a></li>
+                  <li><a href="">Breeds</a></li>
                   <li><a href="">conacts us</a></li>
                 </ul>
               </div>
